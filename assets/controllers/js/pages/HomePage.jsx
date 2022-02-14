@@ -36,6 +36,10 @@ const HomePage = () => {
         commit 2
       </div>
 
+      <div className="feat2">
+        3
+      </div>
+
       <Pagination
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
