@@ -28,6 +28,14 @@ const HomePage = () => {
     <div className="home">
       <h1>Home</h1>
 
+      <div className="feat2">
+        feat 2
+      </div>
+
+      <div className="feat2">
+        commit 2
+      </div>
+
       <Pagination
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
