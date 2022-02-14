@@ -26,8 +26,14 @@ const HomePage = () => {
 
   return (
     <div className="home">
-      <h1>Home</h1>
+      
+      <div className="amazing-feature">
+        <h1>Home</h1>
+      </div>
 
+ 
+
+ 
       <Pagination
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
