@@ -38,7 +38,9 @@ const HomePage = () => {
 
       <div className="test2">
         <h1>Test2</h1>
+        <h1>Test3</h1>
       </div>
+
 
       <table className="table table-hover">
         <thead>
