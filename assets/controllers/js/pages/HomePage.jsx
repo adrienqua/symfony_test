@@ -37,7 +37,7 @@ const HomePage = () => {
                 onPageChanged={handlePage}
             />
 
-            <div className="feat2">feat 2</div>
+            <div className="feat2">feat 22</div>
 
             <table className="table table-hover">
                 <thead>
