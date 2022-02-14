@@ -40,7 +40,7 @@ const HomePage = () => {
                 {count}
             </button>
 
-            <div className="feat1">ft1</div>
+            <div className="feat1">ft11</div>
 
             <Pagination
                 currentPage={currentPage}
