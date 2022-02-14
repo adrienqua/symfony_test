@@ -35,6 +35,11 @@ const HomePage = () => {
         onPageChanged={handlePage}
       />
 
+
+      <div className="test2">
+        <h1>Test2</h1>
+      </div>
+
       <table className="table table-hover">
         <thead>
           <tr>
