@@ -78,6 +78,18 @@ class Customer
         $this->invoices = new ArrayCollection();
     }
 
+    /**
+     *
+     *  @Groups({"customer_read})
+     * @return float
+     */
+    public function getTotalAmount(): float
+    {
+        return array_reduce($this->invoices->toArray(), function ($total, $invoice) {
+            return $total + $invoice->getAmount();
+        }, 0);
+    }
+ 
     public function getId(): ?int
     {
         return $this->id;
