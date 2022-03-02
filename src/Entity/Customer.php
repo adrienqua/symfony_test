@@ -80,7 +80,7 @@ class Customer
 
     /**
      *
-     *  @Groups({"customer_read})
+     *  @Groups({"customer_read"})
      * @return float
      */
     public function getTotalAmount(): float
@@ -88,6 +88,17 @@ class Customer
         return array_reduce($this->invoices->toArray(), function ($total, $invoice) {
             return $total + $invoice->getAmount();
         }, 0);
+    }
+
+    /**
+     *
+     *  @Groups({"customer_read"})
+     * @return float
+     */
+    public function getInvoicesAmount(): float
+    {
+        $count = $this->invoices->toArray();
+        return sizeof($count);
     }
  
     public function getId(): ?int
